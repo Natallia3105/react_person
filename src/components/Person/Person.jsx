@@ -4,7 +4,7 @@ export const Person = ({ person }) => (
     {person.age !== undefined && (
       <p className="Person__age">{`I am ${person.age}`}</p>
     )}
-    {person.isMarried === true && (
+    {person.isMarried && (
       <p className="Person__partner">
         {`${person.partnerName} is my ${person.isMarried && person.sex === 'f' ? 'husband' : 'wife'}`}
       </p>
